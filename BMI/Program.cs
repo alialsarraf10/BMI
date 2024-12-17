@@ -9,8 +9,8 @@ weight = Console.ReadLine();
 Console.Write("input your height in cm: ");
 height = Console.ReadLine();
 
-double weightval = Convert.ToInt32(weight);
-double heightval = Convert.ToInt32(height);
+double weightval = Convert.ToDouble(weight);
+double heightval = Convert.ToDouble(height);
 
 
 double bmi = (weightval / (Math.Pow(heightval, 2)/100)) * 100;
@@ -22,22 +22,18 @@ string bmistate;
 if (bmi >= 30)
 {
     bmistate = "Obese";
-
 }
 else if (bmi >= 25)
 {
     bmistate = "Overweight";
-
 }
 else if (bmi >= 18.5)
 {
     bmistate = "Healthy";
-
 }
 else
 {
     bmistate = "Underweight";
-  
 }
 Console.WriteLine(bmistate);
 
