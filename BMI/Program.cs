@@ -17,23 +17,29 @@ double bmi = (weightval / (Math.Pow(heightval, 2)/100)) * 100;
 
 Console.WriteLine(bmi);
 
+string bmistate;
+
 if (bmi >= 30)
 {
-    Console.WriteLine("Obese");
+    bmistate = "Obese";
+
 }
 else if (bmi >= 25)
 {
-    Console.WriteLine("Overweight");
+    bmistate = "Overweight";
+
 }
 else if (bmi >= 18.5)
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
+
 }
 else
 {
-    Console.WriteLine("Underweight");
+    bmistate = "Underweight";
+  
 }
-
+Console.WriteLine(bmistate);
 
 Console.WriteLine("BMI State by Age");
 
@@ -42,36 +48,38 @@ age = Console.ReadLine();
 
 int agenum = Convert.ToInt32(age);
 
+
 if (agenum >= 65 &&( bmi >= 24 && bmi <= 29))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 else if (agenum >= 55 && (bmi >= 23 && bmi <= 28))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 else if (agenum >= 45 && (bmi >= 22 && bmi <= 27))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 else if (agenum >= 35 && (bmi >= 21 && bmi <= 26))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 else if (agenum >= 25 && (bmi >= 20 && bmi <= 25))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 
 else if (agenum >= 19 && (bmi >= 19 && bmi <= 24))
 {
-    Console.WriteLine("Healthy");
+    bmistate = "Healthy";
 }
 else
 {
-    Console.WriteLine("not healthy");
+    bmistate = "Not Healthy";
 }
 
+Console.WriteLine(bmistate);
 
 
 
